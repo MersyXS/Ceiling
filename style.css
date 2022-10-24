@@ -185,13 +185,15 @@
 }
 
 .project__image {
-  max-width: 333px;
+  width: 333px;
+  height: 260px;
   border-radius: 50px;
   object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 .reviews {
-  margin: 140px 0 0 0;
+  margin: 110px 0 0 0;
 }
 
 .reviews__title {
@@ -245,6 +247,7 @@
 .element__block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .element__block-name {
@@ -257,11 +260,11 @@
 
 .element__block-category {
   font-style: normal;
-  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: #a3a3a3;
   opacity: 0.7;
+  margin: 0;
 }
 
 .element__description {
