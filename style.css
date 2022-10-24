@@ -15,7 +15,26 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 0 0;
+  margin: 20px auto 0 auto;
+  max-width: 1210px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    max-width: 1010px;
+    padding: 0 20px;
+  }
+}
+
+.header_place_logo {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .header_place_logo {
+    max-width: 380px;
+    padding: 0 20px;
+  }
 }
 
 .header__navigation {
@@ -30,6 +49,13 @@
   font-size: 20px;
   line-height: 24px;
   margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__link {
+    font-size: 16px;
+    margin: 0 15px 0 0;
+  }
 }
 
 .header__link:hover {
@@ -47,8 +73,21 @@
   line-height: 19px;
 }
 
+@media screen and (max-width: 1280px) {
+  .button_header {
+    padding: 7px 25px;
+    font-size: 14px;
+  }
+}
+
 .button_header {
   margin: 0 0 0 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .button_header {
+    margin: 0 0 0 10px;
+  }
 }
 
 .button_header:hover {
@@ -63,6 +102,23 @@
   gap: 75px;
 }
 
+@media screen and (max-width: 1280px) {
+  .lead {
+    padding: 0 25px;
+    gap: 45px;
+  }
+}
+
+.lead__text {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__text {
+    max-width: 340px;
+  }
+}
+
 .lead__title {
   color: #fff;
   max-width: 562px;
@@ -71,6 +127,14 @@
   font-size: 48px;
   line-height: 58px;
   margin: 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__title {
+    font-size: 38px;
+    line-height: 40px;
+  }
 }
 
 .lead__subtitle {
@@ -80,11 +144,29 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  max-width: 100%;
   margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__subtitle {
+    font-size: 18px;
+    line-height: 40px;
+    line-height: 20px;
+  }
 }
 
 .lead__ilustration {
   border-radius: 220px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__ilustration {
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 180px;
+  }
 }
 
 .lead__span {
@@ -93,6 +175,12 @@
 
 .trust {
   margin: 140px 0 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .trust {
+    margin: 100px 0 0 0;
+  }
 }
 
 .trust__title {
@@ -104,8 +192,14 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1280px) {
+  .trust__title {
+    font-size: 36px;
+  }
+}
+
 .cards {
-  margin: 115px 0 0 0;
+  margin: 115px auto 0 auto;
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -114,9 +208,30 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1280px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .cards {
+    margin: 70px auto 0 auto;
+    gap: 25px;
+    padding: 0 5px;
+  }
+}
+
 .card {
   display: flex;
   gap: 25px;
+}
+
+@media screen and (max-width: 890px) {
+  .card {
+    max-width: 400px;
+  }
 }
 
 .card__nubmer {
@@ -126,6 +241,13 @@
   font-size: 36px;
   line-height: 44px;
   color: #0085ff;
+}
+
+@media screen and (max-width: 1280px) {
+  .card__nubmer {
+    font-size: 30px;
+    line-height: 34px;
+  }
 }
 
 .card__title {
@@ -138,6 +260,13 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 1280px) {
+  .card__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
 .card__description {
   margin: 0;
   font-style: normal;
@@ -146,6 +275,22 @@
   line-height: 29px;
   color: #ffffff;
   max-width: 448px;
+}
+
+@media screen and (max-width: 1280px) {
+  .card__description {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card__description {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 470px;
+  }
 }
 
 .card__text {
@@ -223,6 +368,7 @@
   margin: 55px 0 0 0;
   align-items: center;
   gap: 40px;
+  padding: 0;
 }
 
 .element {
@@ -231,6 +377,12 @@
   border-radius: 110px;
   display: flex;
   padding: 15px;
+}
+
+@media screen and (max-width: 890px) {
+  .element {
+    max-width: 780px;
+  }
 }
 
 .element__text {
@@ -281,6 +433,13 @@
   padding: 170px 0 50px 0;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 890px) {
+  .footer {
+    max-width: 1010px;
+    padding: 170px 20px 50px 20px;
+  }
 }
 
 .footer__items {
