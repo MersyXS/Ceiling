@@ -13,13 +13,14 @@
 
 <body class="page">
     <header class="header">
-        <img class="header_place_logo" src="images/Icon.svg" alt="Логотип">
+        <img class="logo_place_header" src="images/Icon.svg" alt="Логотип">
         <nav class="header__navigation">
             <a class="header__link" href="#">Портфолио</a>
             <a class="header__link" href="#">Контакты</a>
             <a class="header__link" href="#">О нас</a>
             <button class="button button_header">Сделать заказ</button>
         </nav>
+        <button class="header__burger"></button>
     </header>
 
     <main class="content">
@@ -160,7 +161,7 @@
     </main>
     <footer class="footer">
         <div class="footer__block-info">
-            <img src="images/Icon.svg" alt="Логотип футер">
+            <img class="logo_place_footer" src="images/Icon.svg" alt="Логотип футер">
             <ul class="footer__items">
                 <li class="footer__item"><a class="footer__url" href="#"><img class="footer__image"
                             src="images/vk-v2-svgrepo-com.svg" alt="Иконка соц. сети"></a></li>
@@ -181,6 +182,19 @@
 
         </div>
     </footer>
+
+    <div class="popup">
+        <button class="popup__close-button" type="button"></button>
+        <div class="popup__menu">
+            <nav class="popup__navigation">
+                <a class="popup__url" href="#">Портфолио</a>
+                <a class="popup__url" href="#">Контакты</a>
+                <a class="popup__url" href="#">О нас</a>
+
+            </nav>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
