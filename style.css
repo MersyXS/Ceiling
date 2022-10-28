@@ -21,6 +21,10 @@
   text-rendering: optimizeLegibility;
 }
 
+.page_overflow {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1280px) {
   .page {
     max-width: 1010px;
@@ -861,6 +865,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.popup__navigation-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
 }
 
 .popup__url {

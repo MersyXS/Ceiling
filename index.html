@@ -13,11 +13,12 @@
 
 <body class="page">
     <header class="header">
-        <a class="logo_place_header" href="#">potolok | Нятяжные потолки в Бийске</a>
+        <a class="logo_place_header" href="#">potolok | Натяжные потолки в Бийске</a>
         <nav class="header__navigation">
-            <a class="header__link" href="#">Портфолио</a>
-            <a class="header__link" href="#">Контакты</a>
-            <a class="header__link" href="#">О нас</a>
+            <a class="header__link" href="#trust">О нас</a>
+            <a class="header__link" href="#project">Портфолио</a>
+            <a class="header__link" href="#reviews">Отзывы</a>
+            <a class="header__link" href="#contacts">Контакты</a>
             <button class="button button_header">Сделать заказ</button>
         </nav>
         <button class="header__burger"></button>
@@ -34,7 +35,7 @@
             <img class="lead__ilustration" src="images/room.png" alt="Иллюстрация">
         </section>
 
-        <section class="trust">
+        <section id="trust" class="trust">
             <h1 class="trust__title">Почему нам доверяют?</h1>
             <div class="cards">
                 <div class="card">
@@ -76,7 +77,7 @@
             </div>
         </section>
 
-        <section class="project">
+        <section id="project" class="project">
             <h1 class="project__title">Наши проекты</h1>
             <ul class="project__items">
                 <li class="project__item">
@@ -100,7 +101,7 @@
             </ul>
         </section>
 
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <h2 class="reviews__title">Отзывы о нашей работе</h2>
             <p class="reviews__subtitle">Нам важен каждый клиент!</p>
 
@@ -161,7 +162,7 @@
     </main>
     <footer class="footer">
         <div class="footer__block-info">
-            <a class="logo_place_footer" href="#">potolok | Нятяжные потолки в Бийске</a>
+            <a class="logo_place_footer" href="#">potolok | Натяжные потолки в Бийске</a>
             <ul class="footer__items">
                 <li class="footer__item"><a class="footer__url" href="#"><img class="footer__image"
                             src="images/vk-v2-svgrepo-com.svg" alt="Иконка соц. сети"></a></li>
@@ -172,7 +173,7 @@
         </div>
 
 
-        <div class="footer__block-contacts">
+        <div id="contacts" class="footer__block-contacts">
             <h2 class="footer__contacts-title">Контакты</h2>
             <ul class="footer__connect">
                 <li class="footer__connect-city">г. Бийск</li>
@@ -187,10 +188,23 @@
         <button class="popup__close-button" type="button"></button>
         <div class="popup__menu">
             <nav class="popup__navigation">
-                <a class="popup__url" href="#">Портфолио</a>
-                <a class="popup__url" href="#">Контакты</a>
-                <a class="popup__url" href="#">О нас</a>
+                <ul class="popup__navigation-items">
+                    <li class="popup__navigation-item">
+                        <a class="popup__url" href="#trust">О нас</a>
+                    </li>
 
+                    <li class="popup__navigation-item">
+                        <a class="popup__url" href="#project">Портфолио</a>
+                    </li>
+
+                    <li class="popup__navigation-item">
+                        <a class="popup__url" href="#reviews">Отзывы</a>
+                    </li>
+
+                    <li class="popup__navigation-item">
+                        <a class="popup__url" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </div>
