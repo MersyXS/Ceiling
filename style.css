@@ -131,14 +131,18 @@
 }
 
 .button {
-  background-color: #0085ff;
-  color: #fff;
+  background-color: #0084ff;
   padding: 7px 31px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.header__url {
+  color: #fff;
   font-size: 16px;
   line-height: 19px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -285,7 +289,7 @@
 }
 
 .lead__span {
-  color: #0085ff;
+  color: #40a4ff;
 }
 
 .trust {
@@ -381,7 +385,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: #0085ff;
+  color: #40a4ff;
 }
 
 @media screen and (max-width: 1280px) {
@@ -539,8 +543,14 @@
   max-width: 890px;
 }
 
+.reviews__span {
+  color: #40a4ff;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 879px) {
   .reviews {
+    margin: 75px auto 0 auto;
     max-width: 780px;
   }
 }
@@ -605,6 +615,7 @@
   border-radius: 110px;
   display: flex;
   padding: 15px;
+  align-items: center;
 }
 
 @media screen and (max-width: 890px) {
@@ -633,9 +644,10 @@
 }
 
 .element__image {
-  max-width: 120px;
+  width: 120px;
   height: 120px;
   border-radius: 60px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 890px) {
@@ -649,6 +661,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 5px 0 0 0;
 }
 
 @media screen and (max-width: 890px) {
@@ -690,7 +703,7 @@
   max-width: 700px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #ffffff;
   margin: 15px 0 0 0;
@@ -771,6 +784,12 @@
   }
 }
 
+.footer__connect {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .footer__contacts-title {
   font-style: normal;
   font-weight: 600;
@@ -790,6 +809,22 @@
   padding: 0;
   list-style: none;
   margin: 10px 0 0 0;
+}
+
+.footer__url {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.footer__url-phone {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__url-phone:hover {
+  opacity: 0.8;
 }
 
 .footer__connect-city {
@@ -816,6 +851,7 @@
 
 .button_footer {
   font-size: 14px;
+  margin: 0 0 0 10px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -832,8 +868,7 @@
 }
 
 .button_footer:hover {
-  padding: 7px 15px;
-  font-size: 14px;
+  opacity: 0.8;
 }
 
 .popup {
@@ -882,6 +917,13 @@
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1280px) {
+  .popup__url {
+    font-size: 36px;
+    line-height: 38px;
+  }
 }
 
 .popup__close-button {
