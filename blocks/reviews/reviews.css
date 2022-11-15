@@ -1,0 +1,11 @@
+.reviews {
+  margin: 110px auto 0 auto;
+  max-width: 890px;
+}
+
+@media screen and (max-width: 879px) {
+  .reviews {
+    margin: 75px auto 0 auto;
+    max-width: 780px;
+  }
+}

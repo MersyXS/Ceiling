@@ -1,0 +1,20 @@
+.lead__ilustration {
+  border-radius: 220px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__ilustration {
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__ilustration {
+    height: 250px;
+    width: 290px;
+    object-fit: fill;
+  }
+}

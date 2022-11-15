@@ -1,0 +1,8 @@
+.footer__url-phone {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__url-phone:hover {
+  opacity: 0.8;
+}

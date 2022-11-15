@@ -1,0 +1,13 @@
+.element__text {
+  width: 80%;
+  margin: 0 0 0 20px;
+}
+
+@media screen and (max-width: 890px) {
+  .element__text {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    gap: 15px;
+  }
+}

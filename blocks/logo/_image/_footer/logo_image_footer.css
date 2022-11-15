@@ -1,0 +1,16 @@
+.logo_image_footer {
+  max-height: 35px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo_image_footer {
+    max-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_image_footer {
+    max-height: 34px;
+  }
+}

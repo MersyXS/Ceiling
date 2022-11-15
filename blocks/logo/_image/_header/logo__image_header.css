@@ -1,0 +1,16 @@
+.logo_image_header {
+  max-height: 44px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo_image_header {
+    max-height: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_image_header {
+    max-height: 30px;
+  }
+}

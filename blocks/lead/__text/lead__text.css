@@ -1,0 +1,17 @@
+.lead__text {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__text {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.header__burger {
+  background: url("../../../images/menu-hamburger-white.svg") 50%;
+  background-size: 22px;
+  object-fit: cover;
+  width: 22px;
+  height: 22px;
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 871px) {
+  .header__burger {
+    display: flex;
+  }
+}

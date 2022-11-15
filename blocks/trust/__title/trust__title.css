@@ -1,0 +1,21 @@
+.trust__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .trust__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trust__title {
+    font-size: 24px;
+  }
+}

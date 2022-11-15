@@ -1,0 +1,14 @@
+.project__image {
+  width: 333px;
+  height: 260px;
+  border-radius: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .project__image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}

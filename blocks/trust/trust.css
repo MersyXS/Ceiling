@@ -1,0 +1,15 @@
+.trust {
+  margin: 140px 0 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .trust {
+    margin: 100px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trust {
+    margin: 60px 0 0 0;
+  }
+}

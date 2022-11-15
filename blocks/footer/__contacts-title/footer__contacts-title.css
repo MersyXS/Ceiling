@@ -1,0 +1,14 @@
+.footer__contacts-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__contacts-title {
+    font-size: 18px;
+  }
+}
