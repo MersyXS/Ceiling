@@ -54,6 +54,7 @@
 @import url("../blocks/footer/__items/footer__items.css");
 @import url("../blocks/footer/__url/footer__url.css");
 @import url("../blocks/footer/__url/__url-phone/footer__url-phone.css");
+@import url("../blocks/footer/__container/footer__container.css");
 @import url("../blocks/popup/popup.css");
 @import url("../blocks/popup/__close-button/popup__close-button.css");
 @import url("../blocks/popup/__navigation/popup__navigation.css");
