@@ -5,7 +5,7 @@
   padding: 15px 0 0 0;
 }
 
-.calculator_title {
+.calculator__title {
   margin: 0;
   font-style: normal;
   font-weight: 700;
@@ -15,8 +15,92 @@
   text-align: center;
 }
 
-.calculator_subtitle {
-  margin: 20px 0 0 40px;
+.calculator__subtitle {
   font-size: 18px;
   color: #fff;
+}
+
+.form__range{
+  width: 520px;
+  margin: 0 0 30px 0;
+  padding: 10px;
+}
+
+.form-calc{
+  display: flex;
+  margin: 30px 0 0 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form__label{
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.form__container{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px 0 0;
+  justify-content: center;
+  
+}
+
+.form__input{
+  width: 330px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 0 0 20px;
+}
+
+.form__control{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form__control-plus{
+  max-width: 35px;
+  max-height: 35px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+
+.form__control-minus{
+  max-width: 35px;
+  max-height: 35px;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+
+.form__container-lamp{
+  margin: 0;
+}
+
+.calculator__summa{
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+  margin: 37px 200px 30px 0;
+}
+
+.calculator__button{
+margin: 30px 0 0 0;
+border: none;
+border-radius: 25px;
+padding: 10px 70px;
+color: #3a3a3a;
+cursor: pointer;
+}
+
+.form__type{
+border: none;
+border-radius: 20px;
+padding: 5px 15px;
+color: #6b6b6b;
+font-size: 16px;
 }
