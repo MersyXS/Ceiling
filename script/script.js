@@ -37,14 +37,12 @@ document.querySelectorAll('a[href^="#"').forEach((link) => {
   });
 });
 
-document.querySelectorAll(".project__image").forEach((zoom) => {
-  zoom.addEventListener("click", function (e) {
-    const target = e.target;
-    const imageSrc = zoom.src;
-    imageContainer.src = imageSrc;
-    imagePopup.classList.add("popup_opened");
-  });
-});
-
 buttonOpen.addEventListener("click", openPopup);
 buttonClose.addEventListener("click", closePopup);
+
+function rangeClick() {
+  const rangeInput = document.querySelector(".form__range");
+  const rangeCount = document.querySelector(".form__count");
+
+  rangeCount.textContent = rangeInput.value + ` м.`;
+}
