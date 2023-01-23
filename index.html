@@ -14,6 +14,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="all" />
   <link rel="stylesheet" href="pages/index.css">
+  <link rel="stylesheet" href="idex.css">
   <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon.ico">
 </head>
 
@@ -23,6 +24,7 @@
     <nav class="header__navigation scroll">
       <a class="header__link" href="#trust">О нас</a>
       <a class="header__link" href="#project">Портфолио</a>
+      <a class="header__link" href="#calculator">Калькулятор цен</a>
       <a class="header__link" href="#reviews">Отзывы</a>
       <a class="header__link" href="#contacts">Контакты</a>
       <a class="button button_header" href="tel:+79619815515" target="_blank">Сделать заказ</a>
@@ -112,6 +114,12 @@
           <img class="project__image" src="images/three.jpg" alt="Проект №6">
         </li>
       </ul>
+    </section>
+
+    <section class="calculator">
+      <h2 class="calculator_title">Калькулятор цен</h2>
+      <p class="calculator_subtitle">Расчет стоимости натяжного потолка</p>
+      <input type="range" min="10" max="100" step="10">
     </section>
 
     <section id="reviews" class="reviews" aria-label="Секция отзывов">
@@ -238,6 +246,10 @@
           </li>
 
           <li class="popup__navigation-item">
+            <a class="popup__url" href="#сalculator">Калькулятор цен</a>
+          </li>
+
+          <li class="popup__navigation-item">
             <a class="popup__url" href="#reviews">Отзывы</a>
           </li>
 
@@ -248,6 +260,14 @@
       </nav>
     </div>
   </div>
+
+  <!--<div class="image-popup">
+    <div class="popup__image-container">
+      <button class="popup__close-button" type="button"></button>
+      <img class="popup__img" src="images/eleven.jpg" alt="#">
+    </div>
+  </div>-->
+
   <script src="/script/script.js"></script>
 </body>
 

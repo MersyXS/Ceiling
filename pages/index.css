@@ -60,4 +60,7 @@
 @import url("../blocks/popup/__navigation/popup__navigation.css");
 @import url("../blocks/popup/__navigation/navigation-items/popup__navigation-items.css");
 @import url("../blocks/popup/__url/popup__url.css");
+@import url("../blocks/image/-popup/image-popup.css");
+@import url("../blocks/popup/__image-container/popup__image-container.css");
+@import url("../blocks/popup/__img/popup__img.css");
 @import url("../blocks/popup/_opened/popup_opened.css");
