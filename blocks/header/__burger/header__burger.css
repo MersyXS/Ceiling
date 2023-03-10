@@ -8,7 +8,7 @@
   display: none;
 }
 
-@media screen and (max-width: 871px) {
+@media screen and (max-width: 980px) {
   .header__burger {
     display: flex;
   }

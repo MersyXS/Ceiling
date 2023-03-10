@@ -5,19 +5,16 @@ const buttonClose = document.querySelector(".popup__close-button");
 const cbox = document.querySelectorAll(".popup__url");
 const imageContainer = document.querySelector(".popup__img");
 
-const imagePopup = document.querySelector(".image-popup");
-const imageBox = document.querySelector(".project__image");
-
 for (let i = 0; i < cbox.length; i++) {
   cbox[i].addEventListener("click", closePopup);
 }
 
-function openPopup(popup) {
+function openPopup() {
   popup.classList.add("popup_opened");
   page.classList.add("page_overflow");
 }
 
-function closePopup(popup) {
+function closePopup() {
   popup.classList.remove("popup_opened");
   page.classList.remove("page_overflow");
 }
@@ -37,108 +34,204 @@ document.querySelectorAll('a[href^="#"').forEach((link) => {
   });
 });
 
-buttonOpen.addEventListener("click", openPopup);
-buttonClose.addEventListener("click", closePopup);
+const inputListing = document.querySelector(".form__input")
+const inputList = document.querySelectorAll('.form__control_button');
 
 const rangeInput = document.querySelector(".form__range");
-const rangeCount = document.querySelector(".form__count");
-var summ = 0;
-const textSumm = document.querySelector('.calculator__summa');
-const type = document.querySelector('#form__type')
+const buttonDisabled = document.querySelector('.form__control-minus');
 
-//Калькульятор, количество светильников
-const svetPlus = document.querySelector('.control__svet-plus');
-const svetMinus  = document.querySelector('.control__svet-minus');
-const svetImput = document.querySelector('.input-svet');
-var svetCount = 0;
+const svetPlus = document.querySelector(".control__svet-plus");
+const svetMinus = document.querySelector(".control__svet-minus");
+const inputSvet = document.querySelector(".input-svet");
+var countSvet = 0;
 
-svetPlus.addEventListener('click', function addCount(){
-svetCount = svetCount + 1;
-svetImput.value = svetCount;
-summ = summ + parseInt(type.value);
-textSumm.textContent = summ;
-})
+const chandeliersPlus = document.querySelector(".control_chandeliers-plus");
+const chandeliersMinus = document.querySelector(".control_chandeliers-minus");
+const inputChandeliers = document.querySelector(".input__chandelier");
+var countChandeliers = 0;
 
-svetMinus.addEventListener('click', function addCount(){
-  svetCount = svetCount - 1;
-  svetImput.value = svetCount;
-  summ = summ - parseInt(type.value);
-  textSumm.textContent = summ;
-})
+const cornerPlus = document.querySelector('.control_corner-plus');
+const cornerMinus = document.querySelector('.control_corner-minus');
+const inputCorner = document.querySelector('.input-corner');
+var countCorner = 0;
 
-//Калькульятор, количество люстр
-const chandelierPlus = document.querySelector('.control__chandelier-plus');
-const chandelierMinus  = document.querySelector('.control__chandelier-minus');
-const chandelierImput = document.querySelector('.input__chandelier');
-var chandelierCount = 0;
+const pipesPlus = document.querySelector('.control_pipes-plus');
+const pipesMinus = document.querySelector('.control_pipes-minus');
+const inputPipes = document.querySelector(".input__pipes");
+var countPipes = 0;
 
 
-chandelierPlus.addEventListener('click', function addCountSvet(){
-  chandelierCount = chandelierCount + 1;
-  chandelierImput.value = chandelierCount;
-  summ = summ + parseInt(type.value);
-  textSumm.textContent = summ;
-  })
-  
-chandelierMinus.addEventListener('click', function addCountChandelier(){
-    chandelierCount = chandelierCount - 1;
-    chandelierImput.value = chandelierCount;
-    summ = summ - parseInt(type.value);
-    textSumm.textContent = summ;
-  })
+const textRange = document.querySelector('.form__count');
+const textSumm = document.querySelector('.calculator__itog');
+const typeCeiling = document.querySelector(".form__type");
 
+var summDop = 0;
+var summRange = 0;
+var summAll = 0;
 
-//Калькульятор, количество углов
-const seePlus = document.querySelector('.control__see-plus');
-const seeMinus  = document.querySelector('.control__see-minus');
-const seeImput = document.querySelector('.input-see');
-var seeCount = 0;
+function rangeClick() {
+  if (rangeInput.value == 0) {
 
-
-seePlus.addEventListener('click', function addCountSee(){
-  seeCount = seeCount + 1;
-  seeImput.value = seeCount;
-  summ = summ + parseInt(type.value);
-  textSumm.textContent = summ;
-  })
-  
-  seeMinus.addEventListener('click', function addCountSee(){
-  seeCount = seeCount - 1;
-  seeImput.value = seeCount;
-  summ = summ - parseInt(type.value);
-  textSumm.textContent = summ;
-  })
-
-
-//Калькульятор, количество труб
-  const pipesPlus = document.querySelector('.control__pipes-plus');
-  const pipesMinus  = document.querySelector('.control__pipes-minus');
-  const pipesImput = document.querySelector('.input__pipes');
-  var pipesCount = 0;
-
-
-pipesPlus.addEventListener('click', function addCountPipes(){
-  pipesCount = pipesCount + 1;
-  pipesImput.value = pipesCount;
-  summ = summ + 1999;
-  textSumm.textContent = summ;
-
-  var summPipes = summ;
-  console.log(summPipes)
-  return summPipes;
- 
-})
-  
-  pipesMinus.addEventListener('click', function addCountPipes(){
-    pipesCount = pipesCount - 1;
-    pipesImput.value = pipesCount;
-    summ = summ - 1999;
-  })
-
-
-  function rangeClick(summPipes) {
-    rangeCount.textContent = rangeInput.value;
-    summ = parseInt(rangeCount.textContent) * type.value;
-    textSumm.textContent = summ + summPipes;
-    console.log(summPipes)
+    inputList.forEach((inputElement) => {
+      inputElement.classList.add('button_disabled');
+      inputElement.disabled = true;
+      inputSvet.value = "";
+      inputChandeliers.value = "";
+      inputCorner.value = "";
+      inputPipes.value = "";
+      countSvet = 0;
+      countPipes = 0;
+      countCorner = 0;
+      countChandeliers = 0;
+      summAll = 0;
+      summDop = 0;
+      summRange = 0;
+    });
   }
+  else {
+    inputList.forEach((inputElement) => {
+      inputElement.classList.remove('button_disabled');
+      inputElement.disabled = false;
+    });
+  }
+
+  textRange.textContent = rangeInput.value;
+  summRange = rangeInput.value * typeCeiling.value;
+  calc();
+  validationButton();
+}
+
+typeCeiling.addEventListener("change", () => {
+  summRange = rangeInput.value * typeCeiling.value;
+  calc();
+});
+
+function svetAdd(evt) {
+  evt.preventDefault();
+  countSvet = countSvet + 1;
+  inputSvet.value = countSvet;
+  summDop += 1000;
+  calc()
+  validationButton()
+}
+
+function svetDelete(evt) {
+  evt.preventDefault();
+  countSvet = countSvet - 1;
+  inputSvet.value = countSvet;
+  summDop -= 1000;
+  calc()
+  validationButton()
+}
+
+function chandeliersAdd(evt) {
+  evt.preventDefault();
+  countChandeliers = countChandeliers + 1;
+  inputChandeliers.value = countChandeliers;
+  summDop += 1000;
+  calc()
+  validationButton()
+}
+
+function chandeliersDelete(evt) {
+  evt.preventDefault();
+  countChandeliers = countChandeliers - 1;
+  inputChandeliers.value = countChandeliers;
+  summDop -= 1000;
+  calc()
+  validationButton()
+}
+
+function cornerAdd(evt) {
+  evt.preventDefault();
+  countCorner = countCorner + 1;
+  inputCorner.value = countCorner;
+  summDop += 1000;
+  calc()
+  cornerMinus.disabled = false;
+  cornerMinus.classList.remove('button_disabled');
+  validationButton()
+}
+
+function cornerDelete(evt) {
+  evt.preventDefault();
+  countCorner = countCorner - 1;
+  inputCorner.value = countCorner;
+  summDop -= 1000;
+  calc()
+  validationButton()
+}
+
+function pipesAdd(evt) {
+  evt.preventDefault();
+  countPipes = countPipes + 1;
+  inputPipes.value = countPipes;
+  summDop += 1000;
+  calc()
+  validationButton()
+}
+
+function pipesDelete(evt) {
+  evt.preventDefault();
+  countPipes = countPipes - 1;
+  inputPipes.value = countPipes;
+  summDop -= 1000;
+  calc()
+  validationButton()
+}
+
+
+function validationButton() {
+  if (countCorner < 1) {
+    cornerMinus.disabled = true;
+    cornerMinus.classList.add('button_disabled');
+  }
+  else {
+    cornerMinus.disabled = false;
+    cornerMinus.classList.remove('button_disabled');
+  }
+
+  if (countChandeliers < 1) {
+    chandeliersMinus.disabled = true;
+    chandeliersMinus.classList.add('button_disabled');
+  }
+  else {
+    chandeliersMinus.disabled = false;
+    chandeliersMinus.classList.remove('button_disabled');
+  }
+
+  if (countPipes < 1) {
+    pipesMinus.disabled = true;
+    pipesMinus.classList.add('button_disabled');
+  }
+  else {
+    pipesMinus.disabled = false;
+    pipesMinus.classList.remove('button_disabled');
+  }
+
+  if (countSvet < 1) {
+    svetMinus.disabled = true;
+    svetMinus.classList.add('button_disabled');
+  }
+  else {
+    svetMinus.disabled = false;
+    svetMinus.classList.remove('button_disabled');
+  }
+}
+
+function calc() {
+  var a = summRange + summDop;
+  textSumm.textContent = a + " р.";
+}
+
+svetPlus.addEventListener('click', svetAdd);
+svetMinus.addEventListener('click', svetDelete);
+chandeliersPlus.addEventListener('click', chandeliersAdd);
+chandeliersMinus.addEventListener('click', chandeliersDelete);
+cornerPlus.addEventListener('click', cornerAdd);
+cornerMinus.addEventListener('click', cornerDelete);
+pipesPlus.addEventListener('click', pipesAdd);
+pipesMinus.addEventListener('click', pipesDelete);
+buttonOpen.addEventListener("click", openPopup);
+buttonClose.addEventListener("click", closePopup);
+rangeClick();

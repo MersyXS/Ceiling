@@ -1,0 +1,13 @@
+.form__label_type {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .form__label_type {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+}

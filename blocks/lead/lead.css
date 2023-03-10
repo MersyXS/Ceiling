@@ -1,9 +1,22 @@
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .lead {
   margin: 115px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 75px;
+  animation: move 3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {

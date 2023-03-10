@@ -1,0 +1,16 @@
+.calculator__button {
+  margin: 15px 0 20px 0;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 80px;
+  color: #2c2c2c;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator__button {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+}

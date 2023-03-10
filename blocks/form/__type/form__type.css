@@ -1,0 +1,21 @@
+.form__type {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+  .form__type {
+    margin: 0 0 15px 0;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__type {
+    margin: 0 0 10px 0;
+    width: 260px;
+  }
+}

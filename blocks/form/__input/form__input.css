@@ -1,0 +1,24 @@
+.form__input {
+  width: 330px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 0 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input {
+    max-width: 180px;
+    font-size: 12px;
+    height: 35px;
+    padding: 0 0 0 15px;
+  }
+}
+
+.form__input::placeholder {
+  color: #b1b1b1;
+}
+
+.form__input:disabled {
+  background-color: rgb(255, 255, 255);
+}

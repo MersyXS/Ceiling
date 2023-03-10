@@ -1,0 +1,12 @@
+.calculator__summa {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+  margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .calculator__summa {
+    font-size: 16px;
+  }
+}
