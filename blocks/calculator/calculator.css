@@ -4,6 +4,7 @@
   border-radius: 100px;
   padding: 15px 0 0 0;
   max-width: 95%;
+  filter: blur(10px);
 }
 
 @media screen and (max-width: 1280px) {
