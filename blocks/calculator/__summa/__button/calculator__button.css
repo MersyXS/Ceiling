@@ -6,6 +6,7 @@
   color: #2c2c2c;
   font-weight: 500;
   cursor: pointer;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {

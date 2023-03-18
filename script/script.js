@@ -65,6 +65,9 @@ const textRange = document.querySelector('.form__count');
 const textSumm = document.querySelector('.calculator__itog');
 const typeCeiling = document.querySelector(".form__type");
 
+const checkColor = document.querySelector('.form__color');
+
+
 var summDop = 0;
 var summRange = 0;
 var summAll = 0;
@@ -75,26 +78,28 @@ function rangeClick() {
     inputList.forEach((inputElement) => {
       inputElement.classList.add('button_disabled');
       inputElement.disabled = true;
-      inputSvet.value = "";
-      inputChandeliers.value = "";
-      inputCorner.value = "";
-      inputPipes.value = "";
-      countSvet = 0;
-      countPipes = 0;
-      countCorner = 0;
-      countChandeliers = 0;
-      summAll = 0;
-      summDop = 0;
-      summRange = 0;
     });
+    checkColor.classList.add('form__color-disabled');
+    checkColor.disabled = true;
+    inputSvet.value = "";
+    inputChandeliers.value = "";
+    inputCorner.value = "";
+    inputPipes.value = "";
+    countSvet = 0;
+    countPipes = 0;
+    countCorner = 0;
+    countChandeliers = 0;
+    summAll = 0;
+    summDop = 0;
+    summRange = 0;
   }
   else {
     inputList.forEach((inputElement) => {
       inputElement.classList.remove('button_disabled');
       inputElement.disabled = false;
     });
+    checkColor.disabled = false;
   }
-
   textRange.textContent = rangeInput.value;
   summRange = rangeInput.value * typeCeiling.value;
   calc();
@@ -220,7 +225,13 @@ function validationButton() {
 }
 
 function calc() {
-  var a = summRange + summDop;
+  if (checkColor.checked == true) {
+    var a = (200 * rangeInput.value) + summRange + summDop;
+  }
+  else {
+    var a = summRange + summDop;
+  }
+
   textSumm.textContent = a + " р.";
 }
 
@@ -234,4 +245,5 @@ pipesPlus.addEventListener('click', pipesAdd);
 pipesMinus.addEventListener('click', pipesDelete);
 buttonOpen.addEventListener("click", openPopup);
 buttonClose.addEventListener("click", closePopup);
+checkColor.addEventListener("click", calc);
 rangeClick();
